@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { ethers } from "ethers"
-import contractAddress from './contracts'
+import { contractAddress } from './contracts'
 import contractAbi from "./abi/contract.json"
 import './App.css'
 
