@@ -1,5 +1,5 @@
 {
-  "name": "frontend",
+  "name": "greeting-frontend-web3",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
