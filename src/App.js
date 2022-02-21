@@ -1,9 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { ethers } from "ethers"
-import simpleContractAbi from "./abi/SimpleContract.json"
+import contractAddress from './contracts'
+import contractAbi from "./abi/contract.json"
 import './App.css'
-
-const contractAddress = '0x5FbDB2315678afecb367f032d93F642f64180aa3'
 
 const provider = new ethers.providers.Web3Provider(window.ethereum)
 
@@ -11,7 +10,7 @@ const provider = new ethers.providers.Web3Provider(window.ethereum)
 const signer = provider.getSigner()
 
 // get the smart contract
-const contract = new ethers.Contract(contractAddress, simpleContractAbi, signer)
+const contract = new ethers.Contract(contractAddress, contractAbi, signer)
 
 const App = () => {
   const [name, setName] = useState('')
